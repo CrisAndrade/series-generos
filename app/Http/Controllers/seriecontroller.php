@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\serieRequest;
+use App\Http\Requests\SerieRequest;
 use App\Series;
 
-class seriecontroller extends Controller
+class SerieController extends Controller
 {
     public function listagem(){  
         $series = Series::all();
@@ -17,17 +17,17 @@ class seriecontroller extends Controller
         return view('serie/cadastro');
     }
 
-    public function cadastrar(serieRequest $request) {    
+    public function cadastrar(SerieRequest $request) {    
         $params = $request->all();
         Series::create($params);
-        return redirect()->action("seriecontroller@listagem");
+        return redirect()->action("SerieController@listagem");
     }
 
     public function remover (Request $request) {    
         $id = $request->id;
         $series = Series::find($id);
         $series->delete();
-        return redirect()->action("seriecontroller@listagem");
+        return redirect()->action("SerieController@listagem");
     }
 
     public function editar(Request $request) {
@@ -43,6 +43,6 @@ class seriecontroller extends Controller
         $series->genero = $request->genero;
         $series->descricao = $request->descricao;
         $series->save(); 
-        return redirect()->action("seriecontroller@listagem");
+        return redirect()->action("SerieController@listagem");
     }
 }

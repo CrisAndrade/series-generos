@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\generoRequest;
+use App\Http\Requests\GeneroRequest;
 use App\Generos;
 
-class generocontroller extends Controller
+class GeneroController extends Controller
 {
     public function listagem(){  
         $generos = Generos::all();
@@ -17,17 +17,17 @@ class generocontroller extends Controller
         return view('genero/cadastro');
     }
 
-    public function cadastrar(generoRequest $request) {    
+    public function cadastrar(GeneroRequest $request) {    
         $params = $request->all();
         Generos::create($params);
-        return redirect()->action("generocontroller@listagem");
+        return redirect()->action("GeneroController@listagem");
     }
 
     public function remover (Request $request) {    
         $id = $request->id;
         $generos = Generos::find($id);
         $generos->delete();
-        return redirect()->action("generocontroller@listagem");
+        return redirect()->action("GeneroController@listagem");
     }
 
     public function editar(Request $request) {
@@ -42,6 +42,6 @@ class generocontroller extends Controller
         $generos->genero = $request->genero;
         $generos->idade_minima = $request->idade_minima;
         $generos->save(); 
-        return redirect()->action("generocontroller@listagem");
+        return redirect()->action("GeneroController@listagem");
     }
 }
