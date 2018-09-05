@@ -24,10 +24,6 @@
         <label>Nome</label>
         <input name="nome" type="text" class="form-control">
     </div>
-    <div class="form-group">
-        <label>Genero</label>
-        <input name="genero" type="text" class="form-control">
-    </div>
     
     <div class="form-group">
         <label>Descrição</label>

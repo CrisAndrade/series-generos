@@ -5,17 +5,17 @@ Route::get('/series/cadastro','SerieController@cadastro');
 Route::post('/series/cadastrar','SerieController@cadastrar'); 
 
 Route::delete('/series/excluir/{id}','SerieController@remover'); 
-Route::get('/series/editar/{id}','SerieController@editar');
+Route::post('/series/editar/{id}','SerieController@editar');
 Route::post('/series/editar','SerieController@editarSerie');
 
 
 
 
-Route::get('/genero','GeneroController@listagem');  
-Route::get('/genero/cadastro','GeneroController@cadastro');
-Route::post('/genero/cadastrar','GeneroController@cadastrar'); 
+Route::get('/generos','GeneroController@listagem');  
+Route::get('/generos/cadastro','GeneroController@cadastro');
+Route::post('/generos/cadastrar','GeneroController@cadastrar'); 
 
-Route::delete('/genero/excluir/{id}','GeneroController@remover'); 
-Route::get('/genero/editar/{id}','GeneroController@editar');
-Route::post('/genero/editar','GeneroController@editarGenero');
+Route::delete('/generos/excluir/{id}','GeneroController@remover'); 
+Route::post('/generos/editar/{id}','GeneroController@editar');
+Route::post('/generos/editar','GeneroController@editarGenero');
  

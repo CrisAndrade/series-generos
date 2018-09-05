@@ -21,14 +21,14 @@
         <td><?= $genero->idade_minima ?></td>
 
         <td>
-            <form  method="GET" action="/genero/editar/<?php echo $genero->id ?>">
+            <form  method="POST" action="/generos/editar/<?php echo $genero->id ?>">
                 <?php echo csrf_field(); ?>
                 <input type="submit" class="btn btn-warning" value="EDITAR">
             </form>
         </td>
         
         <td>
-            <form  method="post" action="/genero/excluir/<?php echo $genero->id ?>">
+            <form  method="post" action="/generos/excluir/<?php echo $genero->id ?>">
             <?php echo csrf_field(); ?>
             <?php echo method_field('DELETE'); ?>
             <input type="submit" class="btn btn-danger" value="EXCLUIR">

@@ -23,7 +23,11 @@
         <td><?= $serie->idade ?></td>
         <td><?= $serie->genero ?></td>
         <td><?= $serie->descricao ?></td>
-        <td><a href="/series/editar/<?php echo $serie->id ?>"> EDITAR</a></td>
+        <td>
+        <form  method="post" action="/series/editar/<?php echo $serie->id ?>">
+            <?php echo csrf_field(); ?>
+            <input type="submit" class="btn btn-warning" value="EDITAR">
+        </form>
         
         <td>
             <form  method="post" action="/series/excluir/<?php echo $serie->id ?>">

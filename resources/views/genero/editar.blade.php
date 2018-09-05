@@ -2,7 +2,7 @@
 
 @section('conteudo')
 <div class="container">
-<form action="/genero/editar" method="post">
+<form action="/generos/editar" method="post">
 
     <input name="_token" type="hidden" value="<?= csrf_token() ?>">
 
@@ -16,7 +16,7 @@
     
     <div class="form-group">
         <label>Idade minima</label>
-        <input name="idade_minima" type="text" class="form-control" value="<?= $generos->idade_minima ?>">
+        <input name="idade_minima" type="number" class="form-control" value="<?= $generos->idade_minima ?>">
     </div>
 
     <button class="btn btn-primary" type="submit">Editar</button>

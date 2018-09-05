@@ -16,7 +16,7 @@
     </div>
 @endif
 
-<form action="/genero/cadastrar" method="post">
+<form action="/generos/cadastrar" method="post">
 
     <input name="_token" type="hidden" value="<?= csrf_token() ?>">
 
@@ -27,7 +27,7 @@
     
     <div class="form-group">
         <label>Idade minima</label>
-        <input name="idade_minima" type="text" class="form-control">
+        <input name="idade_minima" type="number" class="form-control">
     </div>
     <button class="btn btn-primary" type="submit">Adicionar</button>
 

@@ -40,7 +40,6 @@ class SerieController extends Controller
         $id = $request->id;
         $series = Series::find($id);
         $series->nome = $request->nome;
-        $series->genero = $request->genero;
         $series->descricao = $request->descricao;
         $series->save(); 
         return redirect()->action("SerieController@listagem");

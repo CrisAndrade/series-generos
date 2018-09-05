@@ -17,7 +17,6 @@ class CreateSeriesTable extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->string('descricao');
-            $table->string('genero');
             $table->timestamps();
         });
     }

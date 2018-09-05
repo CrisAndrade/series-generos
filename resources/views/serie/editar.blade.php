@@ -1,6 +1,7 @@
 @extends('template')
 
 @section('conteudo')
+<div class="container">
 <form action="/series/editar" method="post">
 
     <input name="_token" type="hidden" value="<?= csrf_token() ?>">
@@ -12,10 +13,6 @@
         <input name="nome" type="text" class="form-control" value="<?= $series->nome ?>">
     </div>
     <div class="form-group">
-        <label>Genero</label>
-        <input name="genero" type="text" class="form-control" value="<?= $series->genero ?>">
-    </div>
-    <div class="form-group">
         <label>Descrição</label>
         <input name="descricao" type="text" class="form-control" value="<?= $series->descricao ?>">
     </div>
@@ -23,6 +20,4 @@
 
 </form>
 </div>
-</body>
-</html>
 @endsection

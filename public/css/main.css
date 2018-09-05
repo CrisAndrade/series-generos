@@ -1,0 +1,13 @@
+body{
+    background: white;
+}
+
+.hover:hover{
+    border-radius: 3px;
+    background: black;
+    color: white;
+}
+
+.pd_left{
+    padding-left: 10px;
+}
