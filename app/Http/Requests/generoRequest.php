@@ -29,5 +29,14 @@ class GeneroRequest extends FormRequest
         ];
     }
 
+    public function messages()
+    {
+        return[
+            'required' => 'O campo :attribute é obrigatorio',
+            'genero.min' => 'O campo :attribute não pode ser menor que 3 caracteres',
+            'genero.max' => 'O campo :attribute não pode passar de 15 caracteres',
+        ];
+    }
+
     
 }
