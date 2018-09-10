@@ -1,21 +1,26 @@
 <?php
 
-Route::get('/series','SerieController@listagem');  
-Route::get('/series/cadastro','SerieController@cadastro');
-Route::post('/series/cadastrar','SerieController@cadastrar'); 
+Route::get('/series','SeriesController@listagem');  
+Route::get('/series/cadastro','SeriesController@cadastro');
+Route::post('/series/cadastrar','SeriesController@cadastrar'); 
 
-Route::delete('/series/excluir/{id}','SerieController@remover'); 
-Route::post('/series/editar/{id}','SerieController@editar');
-Route::post('/series/editar','SerieController@editarSerie');
-
-
+Route::delete('/series/excluir/{id}','SeriesController@remover'); 
+Route::post('/series/editar/{id}','SeriesController@editar');
+Route::post('/series/editar','SeriesController@editarSerie');
 
 
-Route::get('/generos','GeneroController@listagem');  
-Route::get('/generos/cadastro','GeneroController@cadastro');
-Route::post('/generos/cadastrar','GeneroController@cadastrar'); 
 
-Route::delete('/generos/excluir/{id}','GeneroController@remover'); 
-Route::post('/generos/editar/{id}','GeneroController@editar');
-Route::post('/generos/editar','GeneroController@editarGenero');
- 
+
+Route::get('/generos','GenerosController@listagem');  
+Route::get('/generos/cadastro','GenerosController@cadastro');
+Route::post('/generos/cadastrar','GenerosController@cadastrar'); 
+
+Route::delete('/generos/excluir/{id}','GenerosController@remover'); 
+Route::post('/generos/editar/{id}','GenerosController@editar');
+Route::post('/generos/editar','GenerosController@editarGenero');
+
+
+
+
+Route::get('/relacao', 'RelacionarController@listagem');
+Route::post('/relacao/relacionar', 'RelacionarController@Relacionar');

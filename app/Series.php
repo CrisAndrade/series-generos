@@ -9,4 +9,9 @@ class Series extends Model
     protected $table = 'series';
     protected $fillable = array('nome', 'descricao');
     public $timestamps = false;
+
+    public function generos ()
+    {
+        return $this->belongsToMany(Generos::class, 'relacao');
+    }
 }

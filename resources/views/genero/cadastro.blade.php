@@ -29,7 +29,7 @@
         <label>Idade minima</label>
         <input name="idade_minima" type="number" class="form-control">
     </div>
-    <button class="btn btn-primary" type="submit">Adicionar</button>
+    <button class="btn btn-primary" type="submit">CADASTRAR</button>
 
 </form>
 </div>

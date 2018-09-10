@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,39 +11,12 @@
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/series">SERIES&GENEROS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-
-                </ul>
-                <div class="justify-content-end">
-                    <form class="form-inline my-2 my-lg-0 pd_left">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="justify-content-end">
-                    <form class="form-inline my-2 my-lg-0 pd_left">
-                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Carrinho</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-        <div style="width: 100%; padding: 20px;">
-            <center>
-            <h1 class="display-4">Series&Generos</h1>
-            </center>
-        </div>
-
+    <br/>
+    <center>
+        <h1 class="display-4">Series&Generos</h1>
+    </center>
+        <br />
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link disabled hover" href="/series">SERIES</a>
@@ -58,19 +31,29 @@
                 <a class="nav-link disabled hover" href="/generos/cadastro">CADASTRAR GENERO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled hover" href="#">RELACIONAR SERIES E GENERO</a>
+                <a class="nav-link disabled hover" href="/relacao">RELACIONAR SERIES E GENERO</a>
             </li>
         </ul>
-
         <hr>
-
     </header>
+
 
     @yield('conteudo')
 
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
+
     <footer class="page-footer font-small pt-4">
         <hr>
-
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
             <!-- Grid row -->
@@ -128,9 +111,7 @@
         </div>
         <!-- Footer Links -->
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
-        </div>
+        
         <!-- Copyright -->
     </footer>
     <!-- Footer -->

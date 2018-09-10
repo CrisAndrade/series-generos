@@ -29,7 +29,7 @@
         <label>Descrição</label>
         <input name="descricao" type="text" class="form-control">
     </div>
-    <button class="btn btn-primary" type="submit">Adicionar</button>
+    <button class="btn btn-primary" type="submit">CADASTRAR</button>
 
 </form>
 </div>

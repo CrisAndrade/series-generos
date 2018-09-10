@@ -16,7 +16,7 @@
         <label>Descrição</label>
         <input name="descricao" type="text" class="form-control" value="<?= $series->descricao ?>">
     </div>
-    <button class="btn btn-primary" type="submit">Adicionar</button>
+    <button class="btn btn-primary" type="submit">EDITAR</button>
 
 </form>
 </div>

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\SerieRequest;
 use App\Series;
 
-class SerieController extends Controller
+class SeriesController extends Controller
 {
     public function listagem(){  
         $series = Series::all();
@@ -20,14 +20,14 @@ class SerieController extends Controller
     public function cadastrar(SerieRequest $request) {    
         $params = $request->all();
         Series::create($params);
-        return redirect()->action("SerieController@listagem");
+        return redirect()->action("SeriesController@listagem");
     }
 
     public function remover (Request $request) {    
         $id = $request->id;
         $series = Series::find($id);
         $series->delete();
-        return redirect()->action("SerieController@listagem");
+        return redirect()->action("SeriesController@listagem");
     }
 
     public function editar(Request $request) {
@@ -42,6 +42,6 @@ class SerieController extends Controller
         $series->nome = $request->nome;
         $series->descricao = $request->descricao;
         $series->save(); 
-        return redirect()->action("SerieController@listagem");
+        return redirect()->action("SeriesController@listagem");
     }
 }
