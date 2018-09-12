@@ -13,13 +13,7 @@ class relacionarController extends Controller
     public function listagem ()
     {
 
-        $series = Series::where('nome', 'Harry Potter')->get()-first();
-        echo $series->nome;
-
-        $generos = $series->generos;
-        foreach ($generos as $genero) {
-            echo $genero->nome;
-        }
+        $series = Series::all();
+        return view('relacionar/home')->with('series', $series);
     }
-
 }

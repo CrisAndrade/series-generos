@@ -19,6 +19,9 @@
         <br />
         <ul class="nav justify-content-center">
             <li class="nav-item">
+                <a class="nav-link disabled hover" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link disabled hover" href="/series">SERIES</a>
             </li>
             <li class="nav-item">
@@ -30,9 +33,6 @@
             <li class="nav-item">
                 <a class="nav-link disabled hover" href="/generos/cadastro">CADASTRAR GENERO</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled hover" href="/relacao">RELACIONAR SERIES E GENERO</a>
-            </li>
         </ul>
         <hr>
     </header>
@@ -41,12 +41,6 @@
     @yield('conteudo')
 
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <br />
     <br />
     <br />

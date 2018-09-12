@@ -10,7 +10,26 @@ class Series extends Model
     protected $fillable = array('nome', 'descricao');
     public $timestamps = false;
 
-    public function generos ()
+    public function generosInline()
+    {
+        $generos = $this->generos();
+        // $generos = self::generos();
+        
+
+        //if () {
+            return "------------";
+        //}
+
+        /*
+        foreach ($generos as $genero) {
+            $generoInline . = " " . $genero;
+        }
+        
+        return $generoInline ;
+        */
+    }
+
+    public function generos()
     {
         return $this->belongsToMany(Generos::class, 'relacao');
     }

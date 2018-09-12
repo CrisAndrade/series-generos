@@ -10,7 +10,7 @@ class Generos extends Model
     protected $fillable = array('genero', 'idade_minima');
     public $timestamps = false;
 
-    public function series ()
+    public function series()
     {
         return $this->belongsToMany(Series::class, 'relacao');
     }

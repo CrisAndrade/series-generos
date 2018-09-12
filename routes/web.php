@@ -22,5 +22,6 @@ Route::post('/generos/editar','GenerosController@editarGenero');
 
 
 
-Route::get('/relacao', 'RelacionarController@listagem');
+Route::get('/', 'RelacionarController@listagem');
+Route::get('/relacao/relacao', 'RelacionarController@viewRelacionar');
 Route::post('/relacao/relacionar', 'RelacionarController@Relacionar');
