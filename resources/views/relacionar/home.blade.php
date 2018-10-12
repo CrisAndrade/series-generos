@@ -1,7 +1,7 @@
 @extends('template')
 
 @section('conteudo')
-
+<center><h1>HOME</h1></center>
 <div class="container">
     <table class="table table-striped table-bordered table-hover">
         <tr>
@@ -27,7 +27,7 @@
             <?php endforeach ?>
             </td>
             <td>
-                <form method="post" action="/series/excluir/<?php echo $serie->id ?>">
+                <form method="get" action="/relacao/excluir/<?php echo $serie->id ?>">
                     <?php echo csrf_field(); ?>
                     <?php echo method_field('DELETE'); ?>
                     <input type="submit" class="btn btn-danger" value="EXCLUIR">

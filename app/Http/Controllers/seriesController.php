@@ -34,7 +34,7 @@ class SeriesController extends Controller
             $serie->generos()->sync($arrayGeneros);    
         }
 
-        return redirect()->action("SeriesController@listagem");
+        return redirect()->action("RelacionarController@listagem");
     }
 
     public function remover (Request $request)

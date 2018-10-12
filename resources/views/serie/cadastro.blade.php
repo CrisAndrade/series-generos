@@ -4,7 +4,7 @@
 
 @section('conteudo')
 <div class="container">
-<h1>Formulário de produto</h1>
+<center><h1>Cadastrar Series</h1></center>
 
 @if (count($errors) > 0)
     <div class="alert alert-danger">

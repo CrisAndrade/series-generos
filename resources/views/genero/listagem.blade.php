@@ -4,7 +4,7 @@
 @section('conteudo')
 <div class="container">
 
-    <h1>Listagem de generos</h1>
+<center><h1>Listagem Generos</h1></center>
 
 <table class="table table-striped table-bordered table-hover">
     <tr>

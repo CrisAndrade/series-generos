@@ -25,3 +25,4 @@ Route::post('/generos/editar','GenerosController@editarGenero');
 Route::get('/', 'RelacionarController@listagem');
 Route::get('/relacao/relacao', 'RelacionarController@viewRelacionar');
 Route::post('/relacao/relacionar', 'RelacionarController@Relacionar');
+Route::get('/relacao/excluir/{id}', 'RelacionarController@remover');

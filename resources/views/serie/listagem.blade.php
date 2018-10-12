@@ -1,7 +1,9 @@
-@extends('template') @section('conteudo')
+@extends('template')
+
+@section('conteudo')
 <div class="container">
 
-    <h1>Listagem de series</h1>
+    <center><h1>Listagem Series</h1></center>
 
     <table class="table table-striped table-bordered table-hover">
         <tr>

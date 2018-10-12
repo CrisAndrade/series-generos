@@ -10,11 +10,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 </head>
 
-<body>
-    <header>
+<body style="background: white;">
+    <header style="background: whitesmoke; border: solid 1px gainsboro;">
     <br/>
     <center>
-        <h1 class="display-4">Series&Generos</h1>
+        <h1 class="display-4 " style="color:gray;">SERIES & GÊNEROS</h1>
     </center>
         <br />
         <ul class="nav justify-content-center">
@@ -34,8 +34,9 @@
                 <a class="nav-link disabled hover" href="/generos/cadastro">CADASTRAR GENERO</a>
             </li>
         </ul>
-        <hr>
     </header>
+    <br />
+    <br />
 
 
     @yield('conteudo')
@@ -46,8 +47,8 @@
     <br />
     <br /><br />
 
-    <footer class="page-footer font-small pt-4">
-        <hr>
+
+    <footer class="page-footer font-small pt-4" style="background: whitesmoke; border: solid 1px gainsboro;">
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
             <!-- Grid row -->
@@ -55,27 +56,27 @@
                 <!-- Grid column -->
                 <div class="col-md-6 mt-md-0 mt-3">
                     <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                    <h5 class="text-uppercase">Bem vindo!</h5>
+                    <p>Visite nossas redes sociais!</p>
                 </div>
                 <!-- Grid column -->
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
                     <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase">FACEBOOK</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="#!">Cristiano de Aguiar</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="#!">Leonardo Ferraz</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="#!">Leonardo Donis</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
+                            <a href="#!">Juliana Oliveira</a>
                         </li>
                     </ul>
                 </div>
@@ -83,19 +84,19 @@
                 <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
                     <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase">INSTAGRAM</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="#!">@_cris_andrade_</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="#!">@LeoFerraz07</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="#!">@LeoDonis</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
+                            <a href="#!">@Juuh_Oliver_</a>
                         </li>
                     </ul>
                 </div>

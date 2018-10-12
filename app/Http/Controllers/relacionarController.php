@@ -16,4 +16,13 @@ class relacionarController extends Controller
         $series = Series::all();
         return view('relacionar/home')->with('series', $series);
     }
+
+
+    public function remover (Request $request)
+    {    
+        $id = $request->id;
+        $series = Series::find($id);
+        $series->delete();
+        return redirect()->action("RelacionarController@listagem");
+    }
 }
